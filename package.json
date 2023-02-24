@@ -7,6 +7,12 @@
   "devDependencies": {
     "@commitlint/cli": "17.4.4",
     "@commitlint/config-conventional": "17.4.4",
+    "eslint": "8.34.0",
+    "eslint-config-semistandard": "17.0.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-n": "15.6.1",
+    "eslint-plugin-promise": "6.1.1",
     "husky": "8.0.3",
     "lerna": "6.5.1",
     "lint-staged": "13.1.2",
@@ -14,6 +20,7 @@
   },
   "scripts": {
     "prettier:check": "prettier ./ --check",
-    "prettier:write": "prettier ./ --write"
+    "prettier:write": "prettier ./ --write",
+    "lint": "eslint ./"
   }
 }

@@ -1,0 +1,7 @@
+build/
+dist/
+node_modules/
+.eslintrc.js
+*.json
+*.md
+pnpm-lock.yaml
