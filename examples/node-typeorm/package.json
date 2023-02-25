@@ -1,0 +1,25 @@
+{
+  "name": "node-typeorm",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "type": "commonjs",
+  "devDependencies": {
+    "ts-node": "10.9.1",
+    "@types/node": "18.14.1",
+    "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "@vfactory/core": "workspace:*",
+    "@vfactory/typeorm-adapter": "workspace:*",
+    "typeorm": "0.3.12",
+    "reflect-metadata": "0.1.13",
+    "pg": "8.9.0"
+  },
+  "scripts": {
+    "start:db": "docker-compose up postgres --build --detach",
+    "start": "ts-node src/index.ts",
+    "typeorm:generate": "typeorm-ts-node-commonjs migration:generate ./src/migrations/Init -d ./src/data-source.ts",
+    "typeorm:run": "typeorm-ts-node-commonjs migration:run -d ./src/data-source.ts",
+    "typeorm:revert": "typeorm-ts-node-commonjs migration:revert -d ./src/data-source.ts"
+  }
+}

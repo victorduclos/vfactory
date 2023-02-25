@@ -1,7 +1,5 @@
 node_modules/
 .eslintrc.cjs
 *.json
-*.md
-pnpm-lock.yaml
-*.yml
+.eslintignore
 .prettierignore

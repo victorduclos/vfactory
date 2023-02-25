@@ -4,6 +4,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   root: true,
   rules: {
-    'space-before-function-paren': ['off']
+    'space-before-function-paren': ['off'],
+    indent: ['error', 2, { ignoredNodes: ['PropertyDefinition'] }]
   }
 };

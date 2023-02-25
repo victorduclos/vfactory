@@ -6,7 +6,7 @@
     "strict": true,
     "baseUrl": "./src",
     "paths": {
-      "@vfactory/core": ["../../vfactory/src"]
+      "@vfactory/core": ["../../core/src"]
     }
   },
   "exclude": ["node_modules"]
