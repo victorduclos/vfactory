@@ -1,5 +1,5 @@
 {
-  "name": "vfactory-typeorm-adaptor",
+  "name": "@vfactory/typeorm-adapter",
   "version": "0.0.0",
   "main": "dist/index",
   "source": "src/index.ts",
@@ -8,6 +8,9 @@
   "exports": {
     "require": "./dist/index.js",
     "default": "./dist/index.mjs"
+  },
+  "dependencies": {
+    "@vfactory/core": "workspace:*"
   },
   "devDependencies": {
     "tsup": "6.6.3",

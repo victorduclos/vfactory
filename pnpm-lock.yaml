@@ -45,10 +45,13 @@ importers:
       tsup: 6.6.3_typescript@4.9.5
       typescript: 4.9.5
 
-  packages/vfactory-typeorm-adaptor:
+  packages/vfactory-typeorm-adapter:
     specifiers:
+      '@vfactory/core': workspace:*
       tsup: 6.6.3
       typescript: 4.9.5
+    dependencies:
+      '@vfactory/core': link:../vfactory
     devDependencies:
       tsup: 6.6.3_typescript@4.9.5
       typescript: 4.9.5

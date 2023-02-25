@@ -3,7 +3,11 @@
     "module": "commonjs",
     "target": "es2020",
     "sourceMap": true,
-    "strict": true
+    "strict": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@vfactory/core": ["../../vfactory/src"]
+    }
   },
   "exclude": ["node_modules"]
 }

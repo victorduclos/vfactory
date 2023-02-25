@@ -1,1 +1,3 @@
-export const INIT = 'vfactory';
+export type { Adapter } from './types';
+
+export * from './FactoryBotGenerator';
