@@ -21,6 +21,10 @@ export class FactoryBotGenerator {
   }
 
   getFactoryBot(): FactoryBot {
+    if (!this.adapter) {
+      throw new Error('An adapter must set with `setAdapter`');
+    }
+
     // TODO
     return new FactoryBot();
   }

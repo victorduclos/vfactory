@@ -1,3 +1,3 @@
-export type { Adapter } from './types';
+export type { Adapter, Class } from './types';
 
 export * from './FactoryBotGenerator';

@@ -4,8 +4,11 @@ import { TypeORMAdaptor } from '@vfactory/typeorm-adapter';
 import { FactoryBotGenerator } from '@vfactory/core';
 
 AppDataSource.initialize()
-  .then(async () => {
-    const factoryBot = new FactoryBotGenerator().setAdapter(TypeORMAdaptor).addFactory().getFactoryBot();
+  .then(async (dataSource) => {
+    const factoryBot = new FactoryBotGenerator()
+      .setAdapter(new TypeORMAdaptor(dataSource.manager))
+      .addFactory()
+      .getFactoryBot();
     console.log(factoryBot);
 
     console.log('Inserting a new user into the database...');
